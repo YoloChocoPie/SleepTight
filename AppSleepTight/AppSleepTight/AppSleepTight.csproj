@@ -64,6 +64,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormSleep.resx">
+      <DependentUpon>FormSleep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormWakeUp.resx">
       <DependentUpon>FormWakeUp.cs</DependentUpon>
     </EmbeddedResource>

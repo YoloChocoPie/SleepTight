@@ -16,5 +16,10 @@ namespace AppSleepTight
         {
             InitializeComponent();
         }
+
+        private void FormSleep_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
