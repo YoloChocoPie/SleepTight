@@ -15,7 +15,7 @@ namespace AppSleepTight
         public MainForm()
         {
             InitializeComponent();
-            this.btnWakeUp.Click +=btnWakeUp_Click;
+            this.btnCalculate.Click +=btnWakeUp_Click;
             this.btnSleepNow.Click += btnSleepNow_Click;
             
         }
@@ -25,22 +25,6 @@ namespace AppSleepTight
             var form = new FormSleep();
             form.ShowDialog();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void btnWakeUp_Click(object sender, EventArgs e)
         {
@@ -54,7 +38,17 @@ namespace AppSleepTight
 
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbHours_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbMinute_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbDayNight_SelectedValueChanged(object sender, EventArgs e)
         {
 
         }

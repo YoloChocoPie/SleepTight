@@ -31,8 +31,8 @@
             this.lbTenApp = new System.Windows.Forms.Label();
             this.lbTenApp2 = new System.Windows.Forms.Label();
             this.lbWakeUp = new System.Windows.Forms.Label();
-            this.btnWakeUp = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.SleepNow = new System.Windows.Forms.Label();
             this.btnSleepNow = new System.Windows.Forms.Button();
             this.cbHours = new System.Windows.Forms.ComboBox();
             this.cbMinute = new System.Windows.Forms.ComboBox();
@@ -43,14 +43,13 @@
             // 
             this.lbTenApp.AutoSize = true;
             this.lbTenApp.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lbTenApp.Font = new System.Drawing.Font("Nirmala UI Semilight", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenApp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lbTenApp.Location = new System.Drawing.Point(226, 37);
             this.lbTenApp.Name = "lbTenApp";
-            this.lbTenApp.Size = new System.Drawing.Size(198, 50);
+            this.lbTenApp.Size = new System.Drawing.Size(207, 42);
             this.lbTenApp.TabIndex = 0;
             this.lbTenApp.Text = "Sleep Tight";
-            this.lbTenApp.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbTenApp2
             // 
@@ -72,24 +71,24 @@
             this.lbWakeUp.TabIndex = 2;
             this.lbWakeUp.Text = "I Want To Wake Up At";
             // 
-            // btnWakeUp
+            // btnCalculate
             // 
-            this.btnWakeUp.Location = new System.Drawing.Point(482, 166);
-            this.btnWakeUp.Name = "btnWakeUp";
-            this.btnWakeUp.Size = new System.Drawing.Size(131, 23);
-            this.btnWakeUp.TabIndex = 4;
-            this.btnWakeUp.Text = "Calculate";
-            this.btnWakeUp.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(482, 166);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(131, 23);
+            this.btnCalculate.TabIndex = 4;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // SleepNow
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 236);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "If I Sleep Now";
+            this.SleepNow.AutoSize = true;
+            this.SleepNow.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SleepNow.Location = new System.Drawing.Point(12, 236);
+            this.SleepNow.Name = "SleepNow";
+            this.SleepNow.Size = new System.Drawing.Size(167, 29);
+            this.SleepNow.TabIndex = 5;
+            this.SleepNow.Text = "If I Sleep Now";
             // 
             // btnSleepNow
             // 
@@ -102,6 +101,10 @@
             // 
             // cbHours
             // 
+            this.cbHours.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbHours.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbHours.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbHours.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbHours.FormattingEnabled = true;
             this.cbHours.Items.AddRange(new object[] {
             "(Hours)",
@@ -123,9 +126,14 @@
             this.cbHours.Name = "cbHours";
             this.cbHours.Size = new System.Drawing.Size(58, 21);
             this.cbHours.TabIndex = 7;
+            this.cbHours.SelectedValueChanged += new System.EventHandler(this.cbHours_SelectedValueChanged);
             // 
             // cbMinute
             // 
+            this.cbMinute.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbMinute.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbMinute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMinute.FormattingEnabled = true;
             this.cbMinute.Items.AddRange(new object[] {
             "(Minute)",
@@ -146,10 +154,14 @@
             this.cbMinute.Name = "cbMinute";
             this.cbMinute.Size = new System.Drawing.Size(57, 21);
             this.cbMinute.TabIndex = 8;
-            this.cbMinute.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.cbMinute.SelectedValueChanged += new System.EventHandler(this.cbMinute_SelectedValueChanged);
             // 
             // cbDayNight
             // 
+            this.cbDayNight.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbDayNight.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbDayNight.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDayNight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDayNight.FormattingEnabled = true;
             this.cbDayNight.Items.AddRange(new object[] {
             "AM",
@@ -159,6 +171,7 @@
             this.cbDayNight.Name = "cbDayNight";
             this.cbDayNight.Size = new System.Drawing.Size(57, 21);
             this.cbDayNight.TabIndex = 9;
+            this.cbDayNight.SelectedValueChanged += new System.EventHandler(this.cbDayNight_SelectedValueChanged);
             // 
             // MainForm
             // 
@@ -169,13 +182,13 @@
             this.Controls.Add(this.cbMinute);
             this.Controls.Add(this.cbHours);
             this.Controls.Add(this.btnSleepNow);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnWakeUp);
+            this.Controls.Add(this.SleepNow);
+            this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.lbWakeUp);
             this.Controls.Add(this.lbTenApp2);
             this.Controls.Add(this.lbTenApp);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "MainMenu";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,8 +200,8 @@
         private System.Windows.Forms.Label lbTenApp;
         private System.Windows.Forms.Label lbTenApp2;
         private System.Windows.Forms.Label lbWakeUp;
-        private System.Windows.Forms.Button btnWakeUp;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Label SleepNow;
         private System.Windows.Forms.Button btnSleepNow;
         private System.Windows.Forms.ComboBox cbHours;
         private System.Windows.Forms.ComboBox cbMinute;

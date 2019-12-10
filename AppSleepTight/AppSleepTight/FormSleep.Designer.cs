@@ -28,20 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnExit = new System.Windows.Forms.Button();
+            this.txtDayNight2 = new System.Windows.Forms.TextBox();
+            this.txtMinute2 = new System.Windows.Forms.TextBox();
+            this.txtHours2 = new System.Windows.Forms.TextBox();
+            this.txtDayNight1 = new System.Windows.Forms.TextBox();
+            this.txtMinute1 = new System.Windows.Forms.TextBox();
+            this.txtHours1 = new System.Windows.Forms.TextBox();
+            this.lbShouldWU = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(239, 228);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 15;
+            this.btnExit.Text = "DONE";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // txtDayNight2
+            // 
+            this.txtDayNight2.Location = new System.Drawing.Point(357, 177);
+            this.txtDayNight2.Name = "txtDayNight2";
+            this.txtDayNight2.Size = new System.Drawing.Size(128, 20);
+            this.txtDayNight2.TabIndex = 14;
+            // 
+            // txtMinute2
+            // 
+            this.txtMinute2.Location = new System.Drawing.Point(227, 177);
+            this.txtMinute2.Name = "txtMinute2";
+            this.txtMinute2.Size = new System.Drawing.Size(100, 20);
+            this.txtMinute2.TabIndex = 13;
+            // 
+            // txtHours2
+            // 
+            this.txtHours2.Location = new System.Drawing.Point(95, 177);
+            this.txtHours2.Name = "txtHours2";
+            this.txtHours2.Size = new System.Drawing.Size(100, 20);
+            this.txtHours2.TabIndex = 12;
+            // 
+            // txtDayNight1
+            // 
+            this.txtDayNight1.Location = new System.Drawing.Point(357, 129);
+            this.txtDayNight1.Name = "txtDayNight1";
+            this.txtDayNight1.Size = new System.Drawing.Size(128, 20);
+            this.txtDayNight1.TabIndex = 11;
+            // 
+            // txtMinute1
+            // 
+            this.txtMinute1.Location = new System.Drawing.Point(227, 129);
+            this.txtMinute1.Name = "txtMinute1";
+            this.txtMinute1.Size = new System.Drawing.Size(100, 20);
+            this.txtMinute1.TabIndex = 10;
+            // 
+            // txtHours1
+            // 
+            this.txtHours1.Location = new System.Drawing.Point(95, 129);
+            this.txtHours1.Name = "txtHours1";
+            this.txtHours1.Size = new System.Drawing.Size(100, 20);
+            this.txtHours1.TabIndex = 9;
+            // 
+            // lbShouldWU
+            // 
+            this.lbShouldWU.AutoSize = true;
+            this.lbShouldWU.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbShouldWU.Location = new System.Drawing.Point(61, 63);
+            this.lbShouldWU.Name = "lbShouldWU";
+            this.lbShouldWU.Size = new System.Drawing.Size(469, 32);
+            this.lbShouldWU.TabIndex = 8;
+            this.lbShouldWU.Text = "Then You Should Wake Up At These Times";
             // 
             // FormSleep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(554, 315);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.txtDayNight2);
+            this.Controls.Add(this.txtMinute2);
+            this.Controls.Add(this.txtHours2);
+            this.Controls.Add(this.txtDayNight1);
+            this.Controls.Add(this.txtMinute1);
+            this.Controls.Add(this.txtHours1);
+            this.Controls.Add(this.lbShouldWU);
             this.Name = "FormSleep";
             this.Text = "FormSleep";
             this.Load += new System.EventHandler(this.FormSleep_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtDayNight2;
+        private System.Windows.Forms.TextBox txtMinute2;
+        private System.Windows.Forms.TextBox txtHours2;
+        private System.Windows.Forms.TextBox txtDayNight1;
+        private System.Windows.Forms.TextBox txtMinute1;
+        private System.Windows.Forms.TextBox txtHours1;
+        private System.Windows.Forms.Label lbShouldWU;
     }
 }
