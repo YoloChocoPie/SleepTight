@@ -69,7 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BestSleep.Context.cs">
+    <Compile Include="BESTSLEEPQUALITY\BestSleep.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BestSleep.Context.tt</DependentUpon>
@@ -77,18 +77,30 @@
     <Compile Include="BestSleep.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="BestSleep.Designer.cs">
+    <Compile Include="BESTSLEEPQUALITY\BestSleep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BestSleep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BESTSLEEPQUALITY\BestSleep.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BestSleep.edmx</DependentUpon>
     </Compile>
-    <Compile Include="BESTSLEEPQUALITY\TimeBestSleep.cs" />
-    <Compile Include="FormBestSleep.cs">
+    <Compile Include="BESTSLEEPQUALITY\FormAddData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBestSleep.Designer.cs">
+    <Compile Include="BESTSLEEPQUALITY\FormAddData.Designer.cs">
+      <DependentUpon>FormAddData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BESTSLEEPQUALITY\FormBestSleep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BESTSLEEPQUALITY\FormBestSleep.Designer.cs">
       <DependentUpon>FormBestSleep.cs</DependentUpon>
     </Compile>
+    <Compile Include="BESTSLEEPQUALITY\LogicLayer.cs" />
+    <Compile Include="BESTSLEEPQUALITY\TimeBestSleep.cs" />
     <Compile Include="FormSleep.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,7 +113,6 @@
     <Compile Include="FormWakeUp.Designer.cs">
       <DependentUpon>FormWakeUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="LogicLayer.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,7 +136,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBestSleep.resx">
+    <EmbeddedResource Include="BESTSLEEPQUALITY\FormAddData.resx">
+      <DependentUpon>FormAddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BESTSLEEPQUALITY\FormBestSleep.resx">
       <DependentUpon>FormBestSleep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSleep.resx">
@@ -146,20 +160,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="BestSleep.edmx">
+    <EntityDeploy Include="BESTSLEEPQUALITY\BestSleep.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BestSleep.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="App.Config" />
-    <None Include="BestSleep.Context.tt">
+    <None Include="BESTSLEEPQUALITY\BestSleep.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BestSleep.edmx</DependentUpon>
       <LastGenOutput>BestSleep.Context.cs</LastGenOutput>
     </None>
-    <None Include="BestSleep.edmx.diagram">
+    <None Include="BESTSLEEPQUALITY\BestSleep.edmx.diagram">
       <DependentUpon>BestSleep.edmx</DependentUpon>
     </None>
-    <None Include="BestSleep.tt">
+    <None Include="BESTSLEEPQUALITY\BestSleep.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BestSleep.edmx</DependentUpon>
       <LastGenOutput>BestSleep.cs</LastGenOutput>
@@ -213,10 +227,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BestSleep.mdf">
+    <Content Include="BESTSLEEPQUALITY\BestSleep.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BestSleep_log.ldf">
+    <Content Include="BESTSLEEPQUALITY\BestSleep_log.ldf">
       <DependentUpon>BestSleep.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

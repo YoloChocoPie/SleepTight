@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppSleepTight
+namespace AppSleepTight.BESTSLEEPQUALITY
 {
     using System;
     using System.Data.Entity;
