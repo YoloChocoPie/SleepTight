@@ -40,6 +40,7 @@ namespace AppSleepTight.BESTSLEEPQUALITY
             bestsleep.Country = country;
             bestsleep.id = country_id;
             bestsleep.Quality = quality;
+            //
 
             db.Entry(bestsleep).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
