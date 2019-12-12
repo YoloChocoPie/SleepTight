@@ -37,6 +37,8 @@
             this.cbHours = new System.Windows.Forms.ComboBox();
             this.cbMinute = new System.Windows.Forms.ComboBox();
             this.cbDayNight = new System.Windows.Forms.ComboBox();
+            this.lbSeemore = new System.Windows.Forms.Label();
+            this.btnSeemore = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbTenApp
@@ -84,7 +86,7 @@
             // 
             this.SleepNow.AutoSize = true;
             this.SleepNow.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SleepNow.Location = new System.Drawing.Point(12, 236);
+            this.SleepNow.Location = new System.Drawing.Point(12, 204);
             this.SleepNow.Name = "SleepNow";
             this.SleepNow.Size = new System.Drawing.Size(167, 29);
             this.SleepNow.TabIndex = 5;
@@ -92,7 +94,7 @@
             // 
             // btnSleepNow
             // 
-            this.btnSleepNow.Location = new System.Drawing.Point(235, 242);
+            this.btnSleepNow.Location = new System.Drawing.Point(235, 210);
             this.btnSleepNow.Name = "btnSleepNow";
             this.btnSleepNow.Size = new System.Drawing.Size(131, 23);
             this.btnSleepNow.TabIndex = 6;
@@ -173,11 +175,32 @@
             this.cbDayNight.TabIndex = 9;
             this.cbDayNight.SelectedValueChanged += new System.EventHandler(this.cbDayNight_SelectedValueChanged);
             // 
+            // lbSeemore
+            // 
+            this.lbSeemore.AutoSize = true;
+            this.lbSeemore.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSeemore.Location = new System.Drawing.Point(12, 249);
+            this.lbSeemore.Name = "lbSeemore";
+            this.lbSeemore.Size = new System.Drawing.Size(246, 29);
+            this.lbSeemore.TabIndex = 10;
+            this.lbSeemore.Text = "See More Information";
+            // 
+            // btnSeemore
+            // 
+            this.btnSeemore.Location = new System.Drawing.Point(279, 255);
+            this.btnSeemore.Name = "btnSeemore";
+            this.btnSeemore.Size = new System.Drawing.Size(131, 23);
+            this.btnSeemore.TabIndex = 11;
+            this.btnSeemore.Text = "See More";
+            this.btnSeemore.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 326);
+            this.Controls.Add(this.btnSeemore);
+            this.Controls.Add(this.lbSeemore);
             this.Controls.Add(this.cbDayNight);
             this.Controls.Add(this.cbMinute);
             this.Controls.Add(this.cbHours);
@@ -206,6 +229,8 @@
         private System.Windows.Forms.ComboBox cbHours;
         private System.Windows.Forms.ComboBox cbMinute;
         private System.Windows.Forms.ComboBox cbDayNight;
+        private System.Windows.Forms.Label lbSeemore;
+        private System.Windows.Forms.Button btnSeemore;
     }
 }
 

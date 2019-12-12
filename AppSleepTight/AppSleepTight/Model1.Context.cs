@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppSleepTight.BESTSLEEPQUALITY
+namespace AppSleepTight
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SleepQualityEntities : DbContext
+    public partial class BestSleepEntities2 : DbContext
     {
-        public SleepQualityEntities()
-            : base("name=SleepQualityEntities")
+        public BestSleepEntities2()
+            : base("name=BestSleepEntities2")
         {
         }
     
@@ -25,5 +25,6 @@ namespace AppSleepTight.BESTSLEEPQUALITY
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<BestSleep> BestSleeps { get; set; }
     }
 }

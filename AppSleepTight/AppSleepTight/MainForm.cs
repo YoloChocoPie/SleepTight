@@ -17,7 +17,14 @@ namespace AppSleepTight
             InitializeComponent();
             this.btnCalculate.Click +=btnWakeUp_Click;
             this.btnSleepNow.Click += btnSleepNow_Click;
+            this.btnSeemore.Click += btnSeemore_Click;
             
+        }
+
+        void btnSeemore_Click(object sender, EventArgs e)
+        {
+            var form = new FormBestSleep();
+            form.ShowDialog();
         }
 
         void btnSleepNow_Click(object sender, EventArgs e)

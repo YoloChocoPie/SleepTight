@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AppSleepTight.BESTSLEEPQUALITY
 {
-    class BestSleepView
+    public class TimeBestSleep
     {
         public int id { get; set; }
 
@@ -14,6 +13,13 @@ namespace AppSleepTight.BESTSLEEPQUALITY
 
         public int Quality { get; set; }
 
-        
+        public TimeBestSleep(BestSleep bestsleep)
+        {
+            this.id = bestsleep.id;
+            this.Country = bestsleep.Country;
+            this.Quality = bestsleep.Quality;
+            
+        }
+
     }
 }

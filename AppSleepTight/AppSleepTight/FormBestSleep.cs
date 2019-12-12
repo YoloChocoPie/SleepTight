@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppSleepTight.BESTSLEEPQUALITY;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,35 @@ namespace AppSleepTight
 {
     public partial class FormBestSleep : Form
     {
+        private LogicLayer Business;
         public FormBestSleep()
         {
             InitializeComponent();
+            this.Business = new LogicLayer();
+
             this.Load += FormBestSleep_Load;
+
+
+            this.btnAdd.Click += btnAdd_Click;
+
+            this.btnDel.Click += btnDel_Click;
+
+            this.grdBestSleep.DoubleClick += grdBestSleep_DoubleClick;
+        }
+
+        void grdBestSleep_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        void btnDel_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void btnAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         void FormBestSleep_Load(object sender, EventArgs e)
@@ -25,7 +51,14 @@ namespace AppSleepTight
 
         private void ShowAll()
         {
+            var bestsleeps = this.Business.GetData();
+            var timebestsleep = new TimeBestSleep[bestsleeps.Length];
 
+            for (int i = 0; i < bestsleeps.Length; i++)
+            {
+                timebestsleep[i] = new TimeBestSleep(bestsleeps[i]);
+            }
+            this.grdBestSleep.DataSource = timebestsleep;
         }
     }
 }
