@@ -113,7 +113,7 @@
             this.Controls.Add(this.txtHours1);
             this.Controls.Add(this.lbShouldWU);
             this.Name = "FormWakeUp";
-            this.Text = "FormWakeUp";
+            this.Text = "Form Wake Up";
             this.ResumeLayout(false);
             this.PerformLayout();
 
