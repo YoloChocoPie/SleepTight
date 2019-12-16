@@ -13,10 +13,10 @@ namespace AppSleepTight
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BestSleepEntities2 : DbContext
+    public partial class BestSleepEntities4 : DbContext
     {
-        public BestSleepEntities2()
-            : base("name=BestSleepEntities2")
+        public BestSleepEntities4()
+            : base("name=BestSleepEntities4")
         {
         }
     

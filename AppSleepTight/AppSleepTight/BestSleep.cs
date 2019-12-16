@@ -16,6 +16,6 @@ namespace AppSleepTight
     {
         public int id { get; set; }
         public string Country { get; set; }
-        public int Quality { get; set; }
+        public string Quality { get; set; }
     }
 }

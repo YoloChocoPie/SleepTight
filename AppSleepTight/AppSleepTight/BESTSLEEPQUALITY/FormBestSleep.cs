@@ -29,25 +29,44 @@ namespace AppSleepTight
             this.grdBestSleep.DoubleClick += grdBestSleep_DoubleClick;
         }
 
-        void grdBestSleep_DoubleClick(object sender, EventArgs e)
-        {
-            
-        }
-
-        void btnDel_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        void btnAdd_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         void FormBestSleep_Load(object sender, EventArgs e)
         {
             this.ShowAll();
         }
+
+        void grdBestSleep_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+        private void FormBestSleep_Load()
+        {
+            var bestsleep = this.Business.GetData();
+            this.grdBestSleep.DataSource = bestsleep;
+        } 
+        void btnDel_Click(object sender, EventArgs e)
+        {
+            if (this.grdBestSleep.SelectedRows.Count == 1)
+            {
+                if (MessageBox.Show("delete?", "confirm", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    var @bestsleep = (BestSleep)this.grdBestSleep.SelectedRows[0].DataBoundItem;
+                    this.Business.DeleteData(bestsleep.id);
+                    MessageBox.Show("delete");
+                    this.FormBestSleep_Load();
+                }
+            }
+        }
+
+    
+
+        void btnAdd_Click(object sender, EventArgs e)
+        {
+            var createForm = new FormAddData();
+            createForm.ShowDialog();
+            this.FormBestSleep_Load();
+        }
+
+
 
         private void ShowAll()
         {

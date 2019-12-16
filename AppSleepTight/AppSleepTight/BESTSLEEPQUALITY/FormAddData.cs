@@ -15,9 +15,10 @@ namespace AppSleepTight.BESTSLEEPQUALITY
         private LogicLayer Business;
         public FormAddData()
         {
+            InitializeComponent();
             this.Business = new LogicLayer();
+
             
-            this.Load += FormAddData_Load;
 
             this.btnSave.Click += btnSave_Click;
 
@@ -33,17 +34,14 @@ namespace AppSleepTight.BESTSLEEPQUALITY
         {
             var country = this.txtCountry.Text;
 
-            var Quality = this.txtQuality.Text;
+            var quality = this.txtQuality.Text;
 
-            this.Business.CreateData(country, Quality);
+            this.Business.CreateData(country, quality);
 
             MessageBox.Show("done");
             this.Close();
         }
 
-        void FormAddData_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

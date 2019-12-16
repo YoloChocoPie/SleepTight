@@ -11,7 +11,7 @@ namespace AppSleepTight.BESTSLEEPQUALITY
 
         public string Country { get; set; }
 
-        public int Quality { get; set; }
+        public string Quality { get; set; }
 
         public TimeBestSleep(BestSleep bestsleep)
         {
