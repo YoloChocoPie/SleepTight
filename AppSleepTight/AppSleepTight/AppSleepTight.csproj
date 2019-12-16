@@ -69,23 +69,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BESTSLEEPQUALITY\BestSleep.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BestSleep.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BestSleep.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="BESTSLEEPQUALITY\BestSleep.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BestSleep.tt</DependentUpon>
+      <DependentUpon>DIARYDATA.tt</DependentUpon>
     </Compile>
-    <Compile Include="BESTSLEEPQUALITY\BestSleep.Designer.cs">
+    <Compile Include="BESTSLEEPQUALITY\DIARYDATA.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BestSleep.edmx</DependentUpon>
+      <DependentUpon>DIARYDATA.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BESTSLEEPQUALITY\DIARYDATA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DIARYDATA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BESTSLEEPQUALITY\DIARYDATA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DIARYDATA.edmx</DependentUpon>
     </Compile>
     <Compile Include="BESTSLEEPQUALITY\FormAddData.cs">
       <SubType>Form</SubType>
@@ -107,32 +107,11 @@
     <Compile Include="FormSleep.Designer.cs">
       <DependentUpon>FormSleep.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormWakeUp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormWakeUp.Designer.cs">
-      <DependentUpon>FormWakeUp.cs</DependentUpon>
-    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,9 +123,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSleep.resx">
       <DependentUpon>FormSleep.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormWakeUp.resx">
-      <DependentUpon>FormWakeUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -160,40 +136,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="BESTSLEEPQUALITY\BestSleep.edmx">
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="BESTSLEEPQUALITY\DIARYDATA.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BestSleep.Designer.cs</LastGenOutput>
+      <LastGenOutput>DIARYDATA.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.Config" />
-    <None Include="BESTSLEEPQUALITY\BestSleep.Context.tt">
+    <None Include="BESTSLEEPQUALITY\DIARYDATA.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BestSleep.edmx</DependentUpon>
-      <LastGenOutput>BestSleep.Context.cs</LastGenOutput>
+      <DependentUpon>DIARYDATA.edmx</DependentUpon>
+      <LastGenOutput>DIARYDATA.Context.cs</LastGenOutput>
     </None>
-    <None Include="BESTSLEEPQUALITY\BestSleep.edmx.diagram">
-      <DependentUpon>BestSleep.edmx</DependentUpon>
+    <None Include="BESTSLEEPQUALITY\DIARYDATA.edmx.diagram">
+      <DependentUpon>DIARYDATA.edmx</DependentUpon>
     </None>
-    <None Include="BESTSLEEPQUALITY\BestSleep.tt">
+    <None Include="BESTSLEEPQUALITY\DIARYDATA.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BestSleep.edmx</DependentUpon>
-      <LastGenOutput>BestSleep.cs</LastGenOutput>
-    </None>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
-    <None Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>DIARYDATA.edmx</DependentUpon>
+      <LastGenOutput>DIARYDATA.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
