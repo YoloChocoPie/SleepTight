@@ -15,7 +15,7 @@ namespace AppSleepTight
         public MainForm()
         {
             InitializeComponent();
-            this.btnCalculate.Click +=btnWakeUp_Click;
+            
             this.btnSleepNow.Click += btnSleepNow_Click;
             this.btnSeemore.Click += btnSeemore_Click;
             
@@ -33,31 +33,8 @@ namespace AppSleepTight
             form.ShowDialog();
         }
 
-        private void btnWakeUp_Click(object sender, EventArgs e)
-        {
-            var form = new FormWakeUp();
-            form.ShowDialog();
-            
-        }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
 
-        }
 
-        private void cbHours_SelectedValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbMinute_SelectedValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbDayNight_SelectedValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
