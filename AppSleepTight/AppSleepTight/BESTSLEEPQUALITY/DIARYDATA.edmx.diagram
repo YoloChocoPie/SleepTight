@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="379aa4dd1c0046a4bfdd4b00ca96395b" Name="Diagram1">
-        <EntityTypeShape EntityType="BestSleepModel1.BestSleep" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="10361e8d04f14bd58e24acef379a5ffe" Name="Diagram1">
+        <EntityTypeShape EntityType="DIARYDATA.BestSleep" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

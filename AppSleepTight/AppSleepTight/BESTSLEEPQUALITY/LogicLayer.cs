@@ -10,45 +10,32 @@ namespace AppSleepTight.BESTSLEEPQUALITY
     {
         public BestSleep[] GetData()
         {
-            var db = new BestSleepEntities4();
+            var db = new BestSleepEntities();
             return db.BestSleeps.ToArray();
         }
 
         public BestSleep GetData(int id) 
         {
-            var db = new BestSleepEntities4();
+            var db = new BestSleepEntities();
             return db.BestSleeps.Find(id);
         }
 
-        public void CreateData(string country, string quality)
+        public void CreateData(string diary, string quality)
         {
             var bestsleep = new BestSleep();
-            bestsleep.Country = country;
+            bestsleep.DIARY = diary;
             
             bestsleep.Quality = quality;
             
 
-            var db = new BestSleepEntities4();
+            var db = new BestSleepEntities();
             db.BestSleeps.Add(bestsleep);
             db.SaveChanges();
         }
-        public void UpdateData(string country, string quality, int country_id)
-        {
-            var db = new BestSleepEntities4();
-            var bestsleep = db.BestSleeps.Find(country_id);
 
-            bestsleep.Country = country;
-            bestsleep.id = country_id;
-            bestsleep.Quality = quality;
-            //
-
-            db.Entry(bestsleep).State = System.Data.Entity.EntityState.Modified;
-            db.SaveChanges();
-
-        }
         public void DeleteData(int id)
         {
-            var db = new BestSleepEntities4();
+            var db = new BestSleepEntities();
             var bestsleep = db.BestSleeps.Find(id);
 
             db.BestSleeps.Remove(bestsleep);

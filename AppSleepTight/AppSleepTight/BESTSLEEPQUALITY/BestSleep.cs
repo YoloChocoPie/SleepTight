@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppSleepTight
+namespace AppSleepTight.BESTSLEEPQUALITY
 {
     using System;
     using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace AppSleepTight
     public partial class BestSleep
     {
         public int id { get; set; }
-        public string Country { get; set; }
+        public string DIARY { get; set; }
         public string Quality { get; set; }
     }
 }

@@ -44,7 +44,8 @@
             this.grdBestSleep.Location = new System.Drawing.Point(0, 24);
             this.grdBestSleep.Name = "grdBestSleep";
             this.grdBestSleep.ReadOnly = true;
-            this.grdBestSleep.Size = new System.Drawing.Size(331, 149);
+            this.grdBestSleep.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grdBestSleep.Size = new System.Drawing.Size(307, 205);
             this.grdBestSleep.TabIndex = 0;
             // 
             // menuStrip1
@@ -54,7 +55,7 @@
             this.btnDel});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(331, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(307, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(331, 173);
+            this.ClientSize = new System.Drawing.Size(307, 229);
             this.Controls.Add(this.grdBestSleep);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

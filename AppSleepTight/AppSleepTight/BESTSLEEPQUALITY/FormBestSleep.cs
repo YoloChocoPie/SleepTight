@@ -36,7 +36,9 @@ namespace AppSleepTight
 
         void grdBestSleep_DoubleClick(object sender, EventArgs e)
         {
-            
+            var createForm = new FormAddData();
+            createForm.ShowDialog();
+            this.FormBestSleep_Load();
         }
         private void FormBestSleep_Load()
         {

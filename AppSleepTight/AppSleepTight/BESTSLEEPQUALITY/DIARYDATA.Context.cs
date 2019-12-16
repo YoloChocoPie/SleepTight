@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppSleepTight
+namespace AppSleepTight.BESTSLEEPQUALITY
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BestSleepEntities4 : DbContext
+    public partial class BestSleepEntities : DbContext
     {
-        public BestSleepEntities4()
-            : base("name=BestSleepEntities4")
+        public BestSleepEntities()
+            : base("name=BestSleepEntities")
         {
         }
     
