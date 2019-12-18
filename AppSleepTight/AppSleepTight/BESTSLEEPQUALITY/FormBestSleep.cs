@@ -49,11 +49,11 @@ namespace AppSleepTight
         {
             if (this.grdBestSleep.SelectedRows.Count == 1)
             {
-                if (MessageBox.Show("delete?", "confirm", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                if (MessageBox.Show(" Are You Sure Want To Delete? ", "Yes", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {
                     var @bestsleep = (BestSleep)this.grdBestSleep.SelectedRows[0].DataBoundItem;
                     this.Business.DeleteData(bestsleep.id);
-                    MessageBox.Show("delete");
+                    MessageBox.Show(" Delete Successfully !");
                     this.FormBestSleep_Load();
                 }
             }

@@ -61,9 +61,9 @@
             this.lbQuality.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuality.Location = new System.Drawing.Point(18, 154);
             this.lbQuality.Name = "lbQuality";
-            this.lbQuality.Size = new System.Drawing.Size(78, 16);
+            this.lbQuality.Size = new System.Drawing.Size(52, 16);
             this.lbQuality.TabIndex = 17;
-            this.lbQuality.Text = "Quality ( % )";
+            this.lbQuality.Text = "Quality ";
             // 
             // lbCountry
             // 

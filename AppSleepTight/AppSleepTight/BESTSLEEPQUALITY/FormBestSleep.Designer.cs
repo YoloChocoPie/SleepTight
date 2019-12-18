@@ -68,8 +68,8 @@
             // btnDel
             // 
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(70, 20);
-            this.btnDel.Text = "DeletData";
+            this.btnDel.Size = new System.Drawing.Size(79, 20);
+            this.btnDel.Text = "Delete Data";
             // 
             // FormBestSleep
             // 

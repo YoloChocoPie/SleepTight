@@ -100,6 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AppSleepTight.Properties.Resources.pngtree_stay_away_from_insomnia_sleep_sleeping_background_image_189394;
             this.ClientSize = new System.Drawing.Size(457, 220);
             this.Controls.Add(this.btnSeemore);
             this.Controls.Add(this.lbSeemore);

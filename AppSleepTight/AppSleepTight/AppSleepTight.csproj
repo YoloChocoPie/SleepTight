@@ -135,6 +135,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
@@ -202,6 +203,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BestSleep.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\pngtree-stay-away-from-insomnia-sleep-sleeping-background-image_189394.jpg" />
+    <None Include="Resources\flat-person-sleeping-bed-background_23-2148154592.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />

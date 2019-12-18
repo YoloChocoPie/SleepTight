@@ -38,7 +38,7 @@ namespace AppSleepTight.BESTSLEEPQUALITY
 
             this.Business.CreateData(country, quality);
 
-            MessageBox.Show("done");
+            MessageBox.Show("Save Successfully !");
             this.Close();
         }
 

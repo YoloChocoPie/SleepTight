@@ -57,49 +57,62 @@
             // 
             // txtFive
             // 
+            this.txtFive.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtFive.Location = new System.Drawing.Point(214, 197);
             this.txtFive.Name = "txtFive";
+            this.txtFive.ReadOnly = true;
             this.txtFive.Size = new System.Drawing.Size(128, 20);
             this.txtFive.TabIndex = 14;
             // 
             // txtTwo
             // 
+            this.txtTwo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtTwo.Location = new System.Drawing.Point(214, 139);
             this.txtTwo.Name = "txtTwo";
+            this.txtTwo.ReadOnly = true;
             this.txtTwo.Size = new System.Drawing.Size(128, 20);
             this.txtTwo.TabIndex = 13;
             // 
             // txtFour
             // 
+            this.txtFour.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtFour.Location = new System.Drawing.Point(62, 197);
             this.txtFour.Name = "txtFour";
+            this.txtFour.ReadOnly = true;
             this.txtFour.Size = new System.Drawing.Size(100, 20);
             this.txtFour.TabIndex = 12;
             // 
             // txtThree
             // 
+            this.txtThree.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtThree.Location = new System.Drawing.Point(395, 139);
             this.txtThree.Name = "txtThree";
+            this.txtThree.ReadOnly = true;
             this.txtThree.Size = new System.Drawing.Size(128, 20);
             this.txtThree.TabIndex = 11;
             // 
             // txtOne
             // 
+            this.txtOne.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtOne.Location = new System.Drawing.Point(62, 139);
             this.txtOne.Name = "txtOne";
+            this.txtOne.ReadOnly = true;
             this.txtOne.Size = new System.Drawing.Size(100, 20);
             this.txtOne.TabIndex = 10;
             // 
             // txtHours1
             // 
+            this.txtHours1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtHours1.Location = new System.Drawing.Point(367, 47);
             this.txtHours1.Name = "txtHours1";
+            this.txtHours1.ReadOnly = true;
             this.txtHours1.Size = new System.Drawing.Size(175, 20);
             this.txtHours1.TabIndex = 9;
             // 
             // lbTenApp2
             // 
             this.lbTenApp2.AutoSize = true;
+            this.lbTenApp2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lbTenApp2.Font = new System.Drawing.Font("NSimSun", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenApp2.Location = new System.Drawing.Point(21, 40);
             this.lbTenApp2.Name = "lbTenApp2";
@@ -110,17 +123,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("NSimSun", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 99);
+            this.label1.Location = new System.Drawing.Point(3, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(544, 27);
+            this.label1.Size = new System.Drawing.Size(572, 27);
             this.label1.TabIndex = 17;
-            this.label1.Text = "You should be wake up at these times :";
+            this.label1.Text = "You should be waking up at these times :";
             // 
             // txtSix
             // 
+            this.txtSix.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtSix.Location = new System.Drawing.Point(395, 197);
             this.txtSix.Name = "txtSix";
+            this.txtSix.ReadOnly = true;
             this.txtSix.Size = new System.Drawing.Size(128, 20);
             this.txtSix.TabIndex = 18;
             // 
@@ -188,7 +204,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 262);
+            this.BackgroundImage = global::AppSleepTight.Properties.Resources.images;
+            this.ClientSize = new System.Drawing.Size(576, 255);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
